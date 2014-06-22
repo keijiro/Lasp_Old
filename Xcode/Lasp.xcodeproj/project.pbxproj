@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F529A9B1956CB6C0066F174 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F529A9A1956CB6C0066F174 /* CoreFoundation.framework */; };
+		0F529AA11956CB6C0066F174 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F529A9F1956CB6C0066F174 /* InfoPlist.strings */; };
+		0F529AAD1956CB8D0066F174 /* AudioInputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F529AA91956CB8D0066F174 /* AudioInputHandler.m */; };
+		0F529AAE1956CB8D0066F174 /* AudioRingBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F529AAB1956CB8D0066F174 /* AudioRingBuffer.m */; };
+		0F529AAF1956CB8D0066F174 /* PluginEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F529AAC1956CB8D0066F174 /* PluginEntry.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F529A971956CB6C0066F174 /* Lasp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lasp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F529A9A1956CB6C0066F174 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		0F529A9E1956CB6C0066F174 /* Lasp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lasp-Info.plist"; sourceTree = "<group>"; };
+		0F529AA01956CB6C0066F174 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F529AA21956CB6C0066F174 /* Lasp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lasp-Prefix.pch"; sourceTree = "<group>"; };
+		0F529AA81956CB8D0066F174 /* AudioInputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioInputHandler.h; sourceTree = "<group>"; };
+		0F529AA91956CB8D0066F174 /* AudioInputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioInputHandler.m; sourceTree = "<group>"; };
+		0F529AAA1956CB8D0066F174 /* AudioRingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRingBuffer.h; sourceTree = "<group>"; };
+		0F529AAB1956CB8D0066F174 /* AudioRingBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRingBuffer.m; sourceTree = "<group>"; };
+		0F529AAC1956CB8D0066F174 /* PluginEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginEntry.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F529A941956CB6C0066F174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F529A9B1956CB6C0066F174 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F529A8E1956CB6C0066F174 = {
+			isa = PBXGroup;
+			children = (
+				0F529A9C1956CB6C0066F174 /* Lasp */,
+				0F529A991956CB6C0066F174 /* Frameworks */,
+				0F529A981956CB6C0066F174 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F529A981956CB6C0066F174 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F529A971956CB6C0066F174 /* Lasp.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F529A991956CB6C0066F174 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F529A9A1956CB6C0066F174 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F529A9C1956CB6C0066F174 /* Lasp */ = {
+			isa = PBXGroup;
+			children = (
+				0F529AA81956CB8D0066F174 /* AudioInputHandler.h */,
+				0F529AA91956CB8D0066F174 /* AudioInputHandler.m */,
+				0F529AAA1956CB8D0066F174 /* AudioRingBuffer.h */,
+				0F529AAB1956CB8D0066F174 /* AudioRingBuffer.m */,
+				0F529AAC1956CB8D0066F174 /* PluginEntry.m */,
+				0F529A9D1956CB6C0066F174 /* Supporting Files */,
+			);
+			path = Lasp;
+			sourceTree = "<group>";
+		};
+		0F529A9D1956CB6C0066F174 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F529A9E1956CB6C0066F174 /* Lasp-Info.plist */,
+				0F529A9F1956CB6C0066F174 /* InfoPlist.strings */,
+				0F529AA21956CB6C0066F174 /* Lasp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F529A961956CB6C0066F174 /* Lasp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F529AA51956CB6C0066F174 /* Build configuration list for PBXNativeTarget "Lasp" */;
+			buildPhases = (
+				0F529A931956CB6C0066F174 /* Sources */,
+				0F529A941956CB6C0066F174 /* Frameworks */,
+				0F529A951956CB6C0066F174 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lasp;
+			productName = Lasp;
+			productReference = 0F529A971956CB6C0066F174 /* Lasp.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F529A8F1956CB6C0066F174 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 0F529A921956CB6C0066F174 /* Build configuration list for PBXProject "Lasp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F529A8E1956CB6C0066F174;
+			productRefGroup = 0F529A981956CB6C0066F174 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F529A961956CB6C0066F174 /* Lasp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F529A951956CB6C0066F174 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F529AA11956CB6C0066F174 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F529A931956CB6C0066F174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F529AAE1956CB8D0066F174 /* AudioRingBuffer.m in Sources */,
+				0F529AAF1956CB8D0066F174 /* PluginEntry.m in Sources */,
+				0F529AAD1956CB8D0066F174 /* AudioInputHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F529A9F1956CB6C0066F174 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F529AA01956CB6C0066F174 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F529AA31956CB6C0066F174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0F529AA41956CB6C0066F174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0F529AA61956CB6C0066F174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lasp/Lasp-Prefix.pch";
+				INFOPLIST_FILE = "Lasp/Lasp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0F529AA71956CB6C0066F174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lasp/Lasp-Prefix.pch";
+				INFOPLIST_FILE = "Lasp/Lasp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F529A921956CB6C0066F174 /* Build configuration list for PBXProject "Lasp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F529AA31956CB6C0066F174 /* Debug */,
+				0F529AA41956CB6C0066F174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F529AA51956CB6C0066F174 /* Build configuration list for PBXNativeTarget "Lasp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F529AA61956CB6C0066F174 /* Debug */,
+				0F529AA71956CB6C0066F174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F529A8F1956CB6C0066F174 /* Project object */;
+}
