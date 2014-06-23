@@ -5,6 +5,10 @@ public class RmsToScale : MonoBehaviour
 {
     public bool mute = true;
 
+    const float zeroOffset = 1.5849e-13f;
+    const float refLevel = 0.70710678118f; // 1/sqrt(2)
+    const float minDB = -60.0f;
+
     float squareSum;
     int sampleCount;
 
@@ -12,9 +16,11 @@ public class RmsToScale : MonoBehaviour
     {
         if (sampleCount < 1) return;
 
-        var rms = Mathf.Sqrt(squareSum / sampleCount);
+        var rms = Mathf.Min(1.0f, Mathf.Sqrt(squareSum / sampleCount));
+        var db = 20.0f * Mathf.Log10(rms / refLevel + zeroOffset);
+        var meter = -Mathf.Log10(0.1f + db / (minDB * 1.1f));
 
-        transform.localScale = Vector3.one * rms;
+        transform.localScale = Vector3.one * meter;
 
         squareSum = 0;
         sampleCount = 0;
